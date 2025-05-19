@@ -2,9 +2,6 @@
 
 read -p "Enter the path to the log directory: " log_dir
 
-files_in_dir=$(ls)
-logs_in_dir=$(find)
-
 if [[ -d "$log_dir" ]]; then
 	log_files=$(find "log_dir" -type f -name "*.log")
 	
